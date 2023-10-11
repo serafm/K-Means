@@ -1,3 +1,6 @@
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.*;
 
 public class RandomClusteringDataset {
@@ -91,6 +94,16 @@ public class RandomClusteringDataset {
             }
         }
         System.out.println(dataset);
+
+        try {
+            FileWriter myWriter = new FileWriter("data/dataset.csv");
+            for(int i=0; i<dataset.size(); i++){
+                myWriter.write(dataset.get(i).get(0) + ", " + dataset.get(i).get(1) + "\n");
+            }
+            myWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }
