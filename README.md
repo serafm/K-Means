@@ -1,6 +1,6 @@
 # K-Means Clustering Algorithm
 
-This project implements the K-Means clustering algorithm in Python. The program loads a file containing examples, executes the K-Means algorithm with M centroids, and finally saves the coordinates of the cluster centers. The initial position of each centroid is randomly selected from the examples.
+This project implements the K-Means clustering algorithm in **Java**. The program loads a file containing examples, executes the K-Means algorithm with M centroids, and finally saves the coordinates of the cluster centers. The initial position of each centroid is randomly selected from the examples.
 
 ## Usage
 
